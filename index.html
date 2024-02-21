@@ -5,6 +5,13 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    
     <title>Leandro Marques o seu Personal Dancer</title>
+    <!-- Bootstraps CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- fim Booststrap cdn -->
     <script type="text/javascript" src=" https://platform-api.sharethis.com/js/sharethis.js# property= 65d4a628c4ab2000198d4c3d& product =sticky-share-buttons& source=platform " async="async"> </script>
      <script defer type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65d4a628c4ab2000198d4c3d&product=sticky-share-buttons' async='async'></script>
     <meta content="" name="description" />
@@ -755,25 +762,47 @@
         </div>
     
       
-        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100" >
-          
-                <!------------------------ youtube ------------------ -->
-
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+          <!-- Carrossel -->
+          <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Slide 1 - Vídeo do YouTube -->
+              <!-- width="100%"
+                  height="420px" -->
+              <div class="carousel-item active">
                 <iframe
-                   style="border-radius:10px;"
-                    width="100%"   
-                    height="420px"   
-                    src="https://www.youtube.com/embed/ptAOBuKyVys?si=R62aEvvz0eH8rUb3"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
+                  style="border-radius: 10px;"
+                  
+                  width="560" height="315" 
+                  src="https://www.youtube.com/embed/ptAOBuKyVys?si=R62aEvvz0eH8rUb3"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
                 ></iframe>
-
-
-                <!------------------ fim youtube----------------------- -->
+              </div>
+              <!--  Slide 2 - Vídeo do Vimeo -->
+              <div class="carousel-item ">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/b24a_2NPleg?si=P82zgDhbU0Ki9hsH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>   
+               <!-- slide 3 -video  -->
+               <div class="carousel-item ">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7pZTMOtGfCA?si=goKBf8Qp4n06GrK2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <!-- Adicione mais slides conforme necessário -->
+              <!-- Slide 2, Slide 3, etc. -->
+            </div>
         
-             
+            <!-- Navegação do Carrossel -->
+            <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
         </div>
    </section>
      <!-- Fim do section video  -->
