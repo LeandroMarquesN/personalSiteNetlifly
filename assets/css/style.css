@@ -241,9 +241,9 @@ h6 {
 #hero {
   width: 100vw;
   height: 100vh;
-  background: url("../img/HOmeLeo10.jpg") ;
+  background: url("../img/leandroEscanor.jpg") ;
   background-size: cover;
-  background-position: center 5%;
+  background-position: center center;
 }
 
 #hero:before {
