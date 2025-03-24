@@ -30,6 +30,35 @@ s<!DOCTYPE html>
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 <!--     icones  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!--   Stilo para icones -->
+    <style>
+    /* Estilo para os ícones */
+    .form-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      display: none; /* Esconde os ícones inicialmente */
+    }
+
+    input:valid + .form-icon,
+    textarea:valid + .form-icon {
+      display: block;
+      color: green; /* Ícone verde para campos válidos */
+    }
+
+    input:invalid + .form-icon,
+    textarea:invalid + .form-icon {
+      display: block;
+      color: red; /* Ícone vermelho para campos inválidos */
+    }
+
+    /* Estilo básico para o formulário */
+    .form-group {
+      position: relative;
+    }
+  </style>
 </head>
     <!-- Google Fonts -->
     <link
@@ -1263,90 +1292,91 @@ s<!DOCTYPE html>
                 class="php-email-form"
               > 
               <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_next" value="https://leandromarquesn.github.io/personalSite/sucessoEmailEnviado.html">
+              <input type="hidden" name="_next" value="https://leandrommarquess.n.github.io/personalSite/sucessoEmailEnviado.html">
               <input type="hidden" name="_captcha" value="false">
-                <div class="form-group col-md-6">
-    <label for="name">Digite seu Nome</label>
-    <input
-      type="text"
-      name="name"
-      class="form-control"
-      id="name"
-      required
-    />
-    <i id="nameIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
-</div>
+              <div class="form-group col-md-6">
+      <label for="name">Digite seu Nome</label>
+      <input
+        type="text"
+        name="name"
+        class="form-control"
+        id="name"
+        required
+      />
+      <i id="nameIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
+    </div>
 
-<div class="form-group col-md-6">
-    <label for="telefone">Digite seu telefone para contato</label>
-    <input
-      type="tel"
-      class="form-control"
-      name="telefone"
-      id="telefone"
-      placeholder=" (011)99999-9999"
-      data-mask="(011)99999-9999"
-      required
-    />
-    <i id="telefoneIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
-</div>
+    <div class="form-group col-md-6">
+      <label for="telefone">Digite seu telefone para contato</label>
+      <input
+        type="tel"
+        class="form-control"
+        name="telefone"
+        id="telefone"
+        placeholder=" (011)99999-9999"
+        data-mask="(011)99999-9999"
+        required
+      />
+      <i id="telefoneIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
+    </div>
 
-<div class="form-group col-md-6">
-    <label for="email">Seu E-mail</label>
-    <input
-      type="email"
-      class="form-control"
-      name="email"
-      id="email"
-      placeholder="SeuEmail@exemplo.com"
-      required
-    />
-    <i id="emailIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
-</div>
+    <div class="form-group col-md-6">
+      <label for="email">Seu E-mail</label>
+      <input
+        type="email"
+        class="form-control"
+        name="email"
+        id="email"
+        placeholder="SeuEmail@exemplo.com"
+        required
+      />
+      <i id="emailIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
+    </div>
 
-<div class="form-group">
-    <label for="subject">Fale-me os Ritmos que você mais gosta de dançar</label>
-    <input
-      type="text"
-      class="form-control"
-      name="Ritimo"
-      id="subject"
-      required
-    />
-    <i id="subjectIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
-</div>
+    <div class="form-group">
+      <label for="subject">Fale-me os Ritmos que você mais gosta de dançar</label>
+      <input
+        type="text"
+        class="form-control"
+        name="Ritimo"
+        id="subject"
+        required
+      />
+      <i id="subjectIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
+    </div>
 
-<h4>Caso queira me contratar para um baile específico informe abaixo a data, o horário e o endereço</h4><br>
+    <h4>Caso queira me contratar para um baile específico informe abaixo a data, o horário e o endereço</h4><br>
 
-<div class="form-group">
-  <fieldset>
-    <legend>Informe a Data e Horário do baile</legend>
+    <div class="form-group">
+      <fieldset>
+        <legend>Informe a Data e Horário do baile</legend>
 
-    <!-- Campo de Data -->
-    <label for="dataInput">Data:</label>
-    <input type="date" id="dataInput" name="data-Baile" style="border-radius: 5px;"><br><br>
-    <i id="dataInputIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
+        <!-- Campo de Data -->
+        <label for="dataInput">Data:</label>
+        <input type="date" id="dataInput" name="data-Baile" style="border-radius: 5px;"><br><br>
+        <i id="dataInputIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
 
-    <!-- Campo de Hora -->
-    <label for="horaInput">Hora:</label>
-    <input type="time" id="horaInput" name="hora-Baile" style="border-radius: 5px;"><br>
-    <i id="horaInputIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
-  </fieldset>
-</div>
+        <!-- Campo de Hora -->
+        <label for="horaInput">Hora:</label>
+        <input type="time" id="horaInput" name="hora-Baile" style="border-radius: 5px;"><br>
+        <i id="horaInputIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
+      </fieldset>
+    </div>
 
-<br><br>
+    <br><br>
 
-<div class="form-group">
-    <label for="message">Caso tenha alguma informação extra sobre o baile, como vestimentas ou outras informações, por favor, descreva!</label>
-    <textarea
-      class="form-control"
-      name="message"
-      rows="10"
-      required
-    ></textarea>
-    <i id="messageIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
-</div>
-                </div>
+    <div class="form-group">
+      <label for="message">Caso tenha alguma informação extra sobre o baile, como vestimentas ou outras informações, por favor, descreva!</label>
+      <textarea
+        class="form-control"
+        name="message"
+        rows="10"
+        required
+      ></textarea>
+      <i id="messageIcon" class="form-icon"></i> <!-- Ícone ao lado do campo -->
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
                 <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
