@@ -48,9 +48,21 @@
         }
 
         // Validação do Telefone
+        // let telefone = document.getElementById("telefone").value.trim();
+        // if (!/^\(\d{3}\)\d{5}-\d{4}$/.test(telefone)) {
+        //   errorMessage += "Por favor, insira um telefone no formato (011)99999-9999.\n";
+        //   showIcon("telefone", "telefoneIcon", false); // Ícone vermelho
+        //   isValid = false;
+        // } else {
+        //   showIcon("telefone", "telefoneIcon", true); // Ícone verde
+        // } 
+        
+        // validação telefone valida
+
+         // Validação do Telefone
         let telefone = document.getElementById("telefone").value.trim();
-        if (!/^\(\d{3}\)\d{5}-\d{4}$/.test(telefone)) {
-          errorMessage += "Por favor, insira um telefone no formato (011)99999-9999.\n";
+        if (!/^\d{11}$/.test(telefone)) {
+          errorMessage += "Por favor, insira um telefone válido com 11 dígitos (ex: 11970166621).\n";
           showIcon("telefone", "telefoneIcon", false); // Ícone vermelho
           isValid = false;
         } else {
