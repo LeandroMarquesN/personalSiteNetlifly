@@ -1,5 +1,9 @@
 //   validação de dados
 
+        function mostrarAlerta() {
+                    alert("Este é um alerta de validação!");
+                }
+
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelector("form").addEventListener("submit", function (event) {
                 let isValid = true;
