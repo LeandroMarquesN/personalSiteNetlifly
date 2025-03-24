@@ -7,7 +7,7 @@
 */
 
 /*Formatação do video de capa do youutbe  */
- .video-background iframe {
+/*  .video-background iframe {
             width: 177.78vh;
             height: 100vh;
             position: absolute;
@@ -16,7 +16,7 @@
             transform: translate(-50%, -50%);
             pointer-events: none; /* Para evitar cliques no vídeo */
         }
-
+ */
         
 /*--------------------------------------------------------------
 # General
