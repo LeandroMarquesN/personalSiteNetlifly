@@ -1,7 +1,5 @@
 // Validação de dados
-function mostrarAlerta() {
-    alert("Este é um alerta de validação!");
-}
+
 
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("form").addEventListener("submit", function (event) {
@@ -84,6 +82,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         }
+        // function mostrarAlerta() {
+        //         alert("Este é um alerta de validação!");
+        //     }
 
         // Se houver erros, exibe o alerta
         if (!isValid) {
