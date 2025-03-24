@@ -261,7 +261,7 @@ h6 {
 #hero {
   width: 100vw;
   height: 100vh;
-  background: url("https://www.youtube.com/embed/iOfLQkkzLZo?autoplay=1") ;   
+  background: url("../img/") ;   
   background-size: cover;
   background-position: 50% 30%;
 }
