@@ -247,13 +247,21 @@ h6 {
   left: 0;
 }
 
+/*Iframe pretendo usar :  
+        <iframe width="384" height="683" src="https://www.youtube.com/embed/iOfLQkkzLZo?autoplay=1" 
+        title="24 de março de 2025" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>  */
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+
 #hero {
   width: 100vw;
   height: 100vh;
-/*   background: url("../img/https://youtube.com/shorts/iOfLQkkzLZo?si=wxLQzri8KOs5vj2Z") ;    */
+  background: url("https://www.youtube.com/embed/iOfLQkkzLZo?autoplay=1") ;   
   background-size: cover;
   background-position: 50% 30%;
 }
