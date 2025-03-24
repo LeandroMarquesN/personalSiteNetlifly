@@ -243,7 +243,7 @@ h6 {
   height: 100vh;
   background: url("../img/IMG_0326.jpeg") ;
   background-size: cover;
-  background-position: center 50%;
+  background-position: 50% 30%;
 }
 
 #hero:before {
